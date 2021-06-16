@@ -1,0 +1,180 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand">
+        <img src="../../assets/assets/images/Logo.png" alt="logo" class="navbarLogo">
+      </a>
+      
+      <button class="navbar-toggler" type="button" (click)="toggleBtn()" data-bs-toggle="collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" #navbarToggle>
+        <ul class="navbar-nav me-auto navbar-items">
+          <li class="nav-item active" #navbarItem (click)="goTo(0)">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item" #navbarItem (click)="goTo(1)">
+            <a class="nav-link">Services</a>
+          </li>
+          <li class="nav-item" #navbarItem (click)="goTo(2)">
+            <a class="nav-link">Our Team</a>
+          </li>
+          <li class="nav-item" #navbarItem (click)="goTo(3)">
+            <a class="nav-link" href="#testimonial">Testimonial</a>
+          </li>
+          <li class="nav-item" #navbarItem (click)="goTo(4)">
+            <a class="nav-link" href="#blog">Blog</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav loginUser">
+          <li class="nav-item">
+            <span class="userName">Steven Mitrick</span><img src="../../assets/assets/images/logout.png" alt="logout">
+          </li>
+        </ul>
+      </div>
+
+
+    </div>
+  </nav>
+
+  <!-- landing section -->
+  <div class="container-fluid">
+    <div class="row landingBg">
+      <div class="col-md-6 col-lg-6 col-sm-12 col-12 landingText">
+        <h3>Efficient Learning Methods</h3>
+        <p>Nam eget sapien vel nibh euismod vulputate in vel nibh quisque eu ex urna venenatis sollicitudin ut at libero. Visit tempalno page</p>
+        <span class="startBtn">Let's Start</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonial section -->
+  <div class="container-fluid testimonalSection" id="testimonial">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="testimonialText">TESTIMONIALS</h1>
+      </div>
+    </div>
+
+    <div class="container">
+    <div class="row">
+      
+      <!-- first Employ -->
+      <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="testimonialBox">
+        <div class="userDetails">
+          <img src="../../assets//assets/images/Testimonial-1.png" alt="Barbie">
+          <span>
+          <h5>Barbie</h5>
+          <h6>Art Director</h6>
+        </span>
+        </div>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <span>
+          <img src="../../assets/assets/images/Rating-star.png" alt="Rating-star">
+          <img src="../../assets/assets/images/Rating-star.png" alt="Rating-star">
+          <img src="../../assets/assets/images/Rating-star.png" alt="Rating-star">
+        </span>
+      </div>
+      </div>
+
+      <!-- second Employ -->
+      <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="testimonialBox">
+        <div class="userDetails">
+          <img src="../../assets//assets/images/Testimonial-2.png" alt="Camila">
+          <span>
+          <h5>Camila</h5>
+          <h6>Web Developer</h6>
+        </span>
+        </div>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <span>
+          <img src="../../assets/assets/images/Rating-star.png" alt="Rating-star">
+          <img src="../../assets/assets/images/Rating-star.png" alt="Rating-star">
+          <img src="../../assets/assets/images/Rating-star.png" alt="Rating-star">
+          <img src="../../assets/assets/images/Rating-star.png" alt="Rating-star">
+        </span>
+      </div>
+      </div>
+
+      <!-- third Employ -->
+      <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="testimonialBox">
+        <div class="userDetails">
+          <img src="../../assets//assets/images/Testimonial-3.png" alt="Andrio">
+          <span>
+          <h5>Andrio</h5>
+          <h6>Designer</h6>
+        </span>
+        </div>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <span>
+          <img src="../../assets/assets/images/Rating-star.png" alt="Rating-star">
+          <img src="../../assets/assets/images/Rating-star.png" alt="Rating-star">
+          <img src="../../assets/assets/images/Rating-star.png" alt="Rating-star">
+          <img src="../../assets/assets/images/Rating-star.png" alt="Rating-star">
+          <img src="../../assets/assets/images/Rating-star.png" alt="Rating-star">
+        </span>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <!-- Latest Blog section starts -->
+  <div class="container-fluid" id="blog">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="blogText">LATEST NEWS FROM BLOG</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row blogSection">
+        <div class="col-md-6 col-lg-6 col-12 col-sm-12 blog-div">
+          <img src="../../assets/assets/images/Blog-1.png" alt="blog" class="blogImg">
+          <div class="overlay">
+            <h5>19 JAN:</h5>
+            <span class="businessPost">BUSINESS POST</span>
+            <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently...</h6>
+            <span class="admin">By admin</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-12 col-sm-12 blog-div">
+          <!-- blog 1 -->
+          <div class="blogDetails">
+            <img src="../../assets/assets/images/Blog-2.png" alt="blog1">
+            <div>
+                <h5>19 JAN:<span> BUSINESS POST</span></h5>
+                <h6>Lorem ipsum dolor sit ametcon sectetur adipisicing elit, sed doiusmod tempor incidilabore et dolore magna aliqua Ut enim...</h6>
+                <span>By admin</span>
+            </div>
+          </div>
+
+          <!-- blog 2 -->
+          <div class="blogDetails">
+            <img src="../../assets/assets/images/Blog-3.png" alt="blog2">
+            <div>
+                <h5>12 JAN:<span> BUSINESS POST</span></h5>
+                <h6>Lorem ipsum dolor sit ametcon sectetur adipisicing elit, sed doiusmod tempor incidilabore et dolore magna aliqua Ut enim...</h6>
+                <span>By admin</span>
+            </div>
+          </div>
+
+          <!-- Blog 3 -->
+          <div class="blogDetails">
+            <img src="../../assets/assets/images/Blog-4.png" alt="blog3">
+            <div>
+                <h5>23 JAN:<span> BUSINESS POST</span></h5>
+                <h6>Lorem ipsum dolor sit ametcon sectetur adipisicing elit, sed doiusmod tempor incidilabore et dolore magna aliqua Ut enim...</h6>
+                <span>By admin</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>

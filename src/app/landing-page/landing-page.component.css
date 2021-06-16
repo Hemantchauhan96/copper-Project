@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* landing section css start */
+    .landingBg{
+        background-image: url(../../assets/assets/images/HeraImage.png);
+        background-size: cover;
+        height: 90vh;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .landingBg p{
+        margin-bottom: 2rem;
+    }
+    .landingBg p, h3, span{
+        color:white;
+        font-weight: 300;
+    }
+    .landingBg h3{
+        font-size:35px;
+        font-weight:400;
+    }
+    .startBtn{
+        border: 1px solid white;
+        padding: 8px 20px 8px 20px;
+        border-radius: 39px;
+    }
+    .landingText{
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-top: 12%;
+    }
+/* landing section css ends */
+
+/* testimonal section css start*/
+
+.testimonalSection{
+    background-color: #f2f2f2;
+}
+
+.testimonialText{
+    text-align: center;
+    font-weight: 400;
+    color: #656475;
+    margin: 1.5rem 0px 1.5rem 0px;
+    font-size: 32px;
+}
+
+.userDetails{
+    display: inline-flex;
+    gap: 12px;
+    margin-bottom:15px;
+}
+
+.testimonialBox{
+    background-color: white;
+    padding: 30px 15px 15px 15px;
+    min-height: 300px;
+    max-height: max-content;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+}
+.testimonialBox p{
+    font-size: 12px;
+    color:#8a97a1;
+}
+
+.testimonialBox span>img{
+    width: 14px
+}
+.testimonialBox .userDetails img{
+    width:52px;height:52px;
+}
+.userDetails span{
+    margin-top:10px;
+}
+.userDetails h6{
+    font-size: 12px;
+    color:#c4c4c4;
+}
+.userDetails h5{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+/* testimonial section css ends */
+
+/* Blog section css start */
+.blogSection{
+    margin-bottom: 60px;
+}
+.blogText{
+    text-align: center;
+    font-weight: 400;
+    color: #656475;
+    margin: 1.5rem 0px 0.5rem 0px;
+    font-size: 32px;
+}
+.blog-div{
+    margin-top:1rem;
+    position: relative;
+}
+.blogImg{
+    width: 90%;
+    margin: auto;
+    display: block;
+    height: 410px;
+}
+.overlay {
+    position: absolute;
+    top: -4%;
+    bottom: 0;
+    left: -248px;
+    right: 0;
+    height: 410px;
+    width: 243px;
+    margin: auto;
+    opacity: 0.6;
+    transition: .5s ease;
+    background-color: #2a2f41;
+  }
+
+  .overlay h5{
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    padding-left: 22px;
+    margin-top: 35px;
+    margin-bottom: 0;
+  }
+
+  .businessPost{
+      padding-left:22px;
+
+  }
+  .overlay .admin{
+    padding-left: 22px;
+    font-size: 10px;
+    color: #53d4c2;
+    font-weight: 600;
+  }
+
+  .overlay h6{
+    color: white;
+    font-size: 11px;
+    padding-left: 22px;
+    padding-right: 45px;
+    font-weight: 200;
+    padding-top: 10px;
+    line-height: 1.1rem;
+  }
+
+.blogDetails{
+    display: inline-flex;
+    gap: 15px;
+    margin-bottom:15px;
+}
+.blogDetails img{
+    width: 150px;
+    height: 127px;
+}
+.blogDetails h5>span{
+    color:black;
+    font-weight: 300;
+    font-size: 14px;
+}
+.blogDetails h5{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.blogDetails h6{
+    font-size: 12px;
+    width: 85%;
+    line-height: 1.1rem;
+}
+.blogDetails span{
+    font-size: 10px;
+    font-weight: 600;
+   color: #53d4c2
+}
+
+.userName{
+    color: rgba(0,0,0,.7);
+    font-size: 14px;
+    padding-right: 10px;
+    font-weight: 400;
+}
+
+.userName img{
+    width:12px;
+}
+.active{
+   background-color: #4175df;
+}
+.active>.nav-link{
+    color:white !important;
+    font-weight:300px !important;
+}
+/* Blog section css ends */
+@media (min-width:992px){
+    .navbar{
+        height: 60px;
+    }
+    .navbarLogo{
+        width:90px;
+    }
+    .navbar-brand{
+        margin-left:9%;
+    }
+    .loginUser{
+            margin-left:30%;
+            margin-right:0px;
+    }
+    .navbar-items{
+        margin-left:10%;
+    }
+    .navbar-items li{
+        padding:10px;
+    }
+    .navbar-items li a{
+        color: #a9a9a9;
+    }
+    
+}
+
+@media (max-width: 992px){
+    .overlay {
+        top: 0%;
+        left: -44%;
+        height: 410px;
+        width: 50%;
+      }
+
+      .blogImg{
+          width:100%;
+      }
+
+      .overlay h6{
+          line-height: 0.8rem;
+      }
+
+      .blogDetails h6{
+          width:100%;
+      }
+
+      .testimonialBox{
+          width:100%;
+      }
+    
+}
