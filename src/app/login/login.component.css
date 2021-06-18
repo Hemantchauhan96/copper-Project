@@ -1,0 +1,72 @@
+.loginBg{
+        background-image: url(../../assets/assets/images/img/Login-bg.png);
+        background-size: cover;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center center;
+}
+.loginLogo{
+    display: block;
+    margin:10px auto;
+
+}
+.loginBox{
+    margin: 30vh auto;
+    width: 46%;
+    background-color: lightgray;
+    opacity: 0.7;
+    height: max-content;
+}
+.icon{
+    width:12px;
+    margin-right: 5px;
+}
+.formFields{
+    text-align: center;
+}
+
+.fields{
+    margin-bottom:15px;
+}
+
+.fields span{
+    border: 1px solid black;
+    border-radius: 3px;
+    padding-inline-start: 5px;
+    padding-inline-end: 5px;
+    padding-block-start: 5px;
+    padding-block-end: 5px;
+}
+
+.submitBtn{
+    margin-top:15px;
+    margin-bottom:20px;
+    width: 100px;
+    border: 0px;
+    color: black;
+    text-transform: uppercase;
+}
+input{
+    border: 0;
+    background: transparent;
+    height: 32px;
+}
+input:focus-visible{
+    outline:none;
+}
+::placeholder{
+    font-size:12px;
+}
+input:-webkit-autofill {
+    background-color: #FAFFBD !important;
+}
+.has-error{
+    color: rgb(230, 14, 14);
+    border:1px solid rgb(216, 12, 12) !important
+}
+
+.help-block{
+    font-size: 12px;
+    text-align: center;
+    color: red;
+}

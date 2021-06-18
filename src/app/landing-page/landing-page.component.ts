@@ -1,4 +1,6 @@
 import { Component, ElementRef, OnInit, QueryList, ViewChild, ViewChildren } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-landing-page',
@@ -8,7 +10,7 @@ import { Component, ElementRef, OnInit, QueryList, ViewChild, ViewChildren } fro
 export class LandingPageComponent implements OnInit {
 @ViewChildren('navbarItem') navbar:QueryList<ElementRef>
 @ViewChild('navbarToggle') toggle:ElementRef
-  constructor() { }
+  constructor(private authService: AuthService, private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -31,6 +33,11 @@ export class LandingPageComponent implements OnInit {
       }else{
         this.toggle.nativeElement.classList.remove('show')
       }
+  }
+
+  logout(){
+    this.authService.logout();
+    this.router.navigateByUrl('/login');
   }
 
 }

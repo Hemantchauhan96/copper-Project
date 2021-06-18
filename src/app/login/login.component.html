@@ -1,0 +1,34 @@
+<div class="container-fluid">
+    <div class="row loginBg">
+        <div class="col-12 loginBox">
+            <img src="../../assets/assets/images/img/Logo.png" alt="logo" class="loginLogo">
+            <form [formGroup]="loginForm" (ngSubmit)="login()" class="formFields" autocomplete="off">
+                <div class="fields">
+                    <span [ngClass]="{ 'has-error': isSubmitted && formControls.email.errors }">
+                    <img src="../../assets/assets/images/img/Username.png" alt="user" class="icon">
+                    <input type="email" placeholder="Enter User email address" formControlName="email" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+                    </span> 
+                    <div *ngIf="isSubmitted && formControls.email.errors" class="help-block">
+                        <div *ngIf="formControls.email.errors.required">Email is required*</div>
+                      </div> 
+                      <div  *ngIf="formControls.email.errors && formControls.email.errors.pattern" class="help-block">
+                        Email is invalid*
+                    </div>  
+                </div>
+                <div class="fields">
+                    <span>    
+                        <img src="../../assets/assets/images/img/Password.png" alt="password" class="icon">
+                        <input type="password" placeholder="Password" formControlName="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">
+                    </span>  
+                    <div *ngIf="isSubmitted && formControls.password.errors" class="help-block">
+                        <div *ngIf="formControls.email.errors.required">Password is required*</div>
+                      </div> 
+                      <div  *ngIf="formControls.password.errors && formControls.password.errors.pattern" class="help-block">
+                        Password is invalid*
+                    </div>   
+                </div>
+                <button type="submit" class="submitBtn">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
